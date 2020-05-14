@@ -115,7 +115,7 @@ $(document).ready(function () {
   function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+    var dots = document.getElementsByClassName("dot2");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
@@ -130,4 +130,8 @@ $(document).ready(function () {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 2 seconds
   }
+
+  $(".carousel").carousel({
+    interval: 1000,
+  });
 });

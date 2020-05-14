@@ -31,9 +31,16 @@ body {
 #test {
   position: fixed;
   /* z-index: 100; */
-  background-color: #c8c8c8;
+  /* background-color: #c8c8c8; */
+  background-color: black;
+
   color: white;
-  width: 100%;
+  /* width: 100%; */
+  padding-left: 2%;
+  padding-right: 2%;
+  /* border-radius: 5% 5%; */
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 .sidenav a:hover {
   color: #f1f1f1;
@@ -102,58 +109,12 @@ body {
     top: 0;
     width: 100%;
     display: block;
-    background: linear-gradient(
-      90deg,
-      /* rgba(255, 255, 255, 0.411),
-      rgba(5, 2, 2, 0.425),
-      rgb(4, 5, 8),
-      rgb(4, 5, 8),
-      rgb(4, 5, 8) */
-    );
-    /* text-align: right; */
-    /* margin-right: 20%; */
+    background: linear-gradient(90deg);
   }
 }
-/* 
-.nav-item {
-  color: #fbff00;
-  font-size: 24px;
-  font-family: "Times New Roman", Times, serif;
-  text-align: right;
-  vertical-align: middle;
-  margin-top: 2.5vh;
-}
-
-.nav-item:hover {
-  color: tomato;
-}
-
-.nav-item:last-child {
-  margin-right: 50px;
-  text-decoration: none;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 20px;
-  border-right: #777777 solid;
-  text-align: center;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 640px) {
-  .nav-item {
-    color: #fbff00;
-    font-size: 12px;
-    font-family: "Times New Roman", Times, serif;
-    text-align: right;
-    vertical-align: middle;
-  }
-} */
 
 main {
   min-height: 89vh;
-  /* background-color: rgba(255, 127, 80, 0.603); */
 }
 
 #name {
@@ -223,14 +184,15 @@ main {
 #contact-container,
 .others-container {
   min-height: 95vh;
+  background-color: rgb(230, 225, 225);
 }
 
 .home-container {
-  background-color: rgba(135, 245, 221, 0.411);
+  background-color: rgb(230, 225, 225);
 }
 
 .about-container {
-  background-color: rgba(135, 245, 221, 0.411);
+  background-color: rgb(230, 225, 225);
   text-align: justify;
   font-size: 32px;
   font-style: oblique;
@@ -249,7 +211,7 @@ main {
 }
 
 .projects-container {
-  background-color: rgba(135, 245, 221, 0.411);
+  background-color: rgb(236, 233, 233);
 }
 /* --------------------------------------------------------------- */
 /* Slideshow container */
@@ -367,7 +329,7 @@ main {
 }
 /* -------------------Hire Me Section-------------------------------- */
 .hire-container {
-  background-color: rgba(135, 245, 221, 0.411);
+  background-color: rgb(230, 225, 225);
 }
 .hire-icons {
   width: 60%;
@@ -429,7 +391,7 @@ main {
 }
 
 #contact-container {
-  background-color: rgba(135, 245, 221, 0.411);
+  background-color: rgb(230, 225, 225);
 }
 
 .contact-container {
@@ -460,7 +422,7 @@ main {
 }
 
 .others-container {
-  background-color: rgba(135, 245, 221, 0.411);
+  background-color: rgb(230, 225, 225);
 }
 .firebase-show {
   display: block;
@@ -483,22 +445,13 @@ main {
   text-align: center;
 }
 
-/* #imageProjects{
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    float: left;
-    margin: auto;
-    
-} */
-
 footer {
   min-height: 6vh;
   background-color: cornflowerblue;
   text-align: center;
 }
 
-.fa {
+#faFooter {
   padding: 20px;
   font-size: 50px;
   width: 50px;
@@ -509,7 +462,7 @@ footer {
 }
 
 /* Add a hover effect if you want */
-.fa:hover {
+#faFooter:hover {
   opacity: 0.7;
   font-size: 80px;
   width: 80px;
@@ -548,19 +501,5 @@ footer {
 .projects,
 .about,
 .home {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.411),
-    rgba(255, 254, 254, 0.425),
-    rgb(118, 138, 197),
-    rgb(255, 255, 255),
-    rgb(4, 5, 8)
-  );
+  text-align: center;
 }
-
-/* a {
-  font-style: none;
-  font-size: 24px;
-  color: black;
-  text-decoration: none;
-} */
