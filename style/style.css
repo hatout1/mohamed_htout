@@ -205,7 +205,32 @@ main {
     height: 50vh;
   }
 }
+
+.projectTitle h3 {
+  text-align: center;
+}
+
+#projectTitle {
+  background-color: rgb(223, 223, 37);
+  min-width: 10%;
+}
+
 .projectsInformationDiv {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 640px) {
+  .projectTitle {
+    text-align: center;
+  }
+  .projectsInformationDiv {
+    margin: 2%;
+    width: 98%;
+  }
+  #aboutPro {
+    color: #fffffd;
+  }
 }
 
 /* Caption text */
