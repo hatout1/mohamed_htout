@@ -4,6 +4,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: rgb(236, 233, 233);
 }
 
 .sidenav {
@@ -28,22 +29,8 @@ body {
   transition: 0.3s;
 }
 
-#test {
-  position: fixed;
-  /* z-index: 100; */
-  /* background-color: #c8c8c8; */
-  background-color: black;
-
-  color: white;
-  /* width: 100%; */
-  padding-left: 2%;
-  padding-right: 2%;
-  /* border-radius: 5% 5%; */
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #e5ff00;
 }
 
 .sidenav .closebtn {
@@ -68,49 +55,17 @@ body {
   }
 }
 
-#navbarNavAltMarkup {
-  width: 100%;
-  text-align: center;
-}
-
-#navbar-nav {
-  display: flex;
-  text-align: center;
+#sandwichBar {
+  position: fixed;
+  background-color: black;
+  color: white;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .nav-item {
   flex: 1;
   text-align: center;
-}
-
-.navbar {
-  height: 2.5vh;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  width: 100%;
-  display: table;
-
-  background: linear-gradient(
-    90deg,
-    /* rgba(255, 255, 255, 0.411),
-    rgba(5, 2, 2, 0.425),
-    rgb(4, 5, 8),
-    rgb(4, 5, 8),
-    rgb(4, 5, 8) */
-  );
-  text-align: right;
-}
-@media screen and (max-width: 640px) {
-  nav {
-    height: 7vh;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    width: 100%;
-    display: block;
-    background: linear-gradient(90deg);
-  }
 }
 
 main {
@@ -134,11 +89,9 @@ main {
 @media screen and (max-width: 640px) {
   .name {
     width: 100%;
-    height: 50%;
-    display: block;
-    position: relative;
-    float: left;
     font-size: 32px;
+    margin-top: 0%;
+    margin-left: 0%;
   }
   #name {
     font-size: 32px;
@@ -166,33 +119,27 @@ main {
   .photo {
     width: 100%;
     height: 50%;
-    float: left;
   }
   #photo {
     max-width: 80%;
     max-height: 80%;
     border-radius: 100%;
-    position: relative;
     margin-top: 0%;
   }
 }
 
 .home-container,
 .projects-container,
-.about-container,
 .hire-container,
 #contact-container,
 .others-container {
-  min-height: 95vh;
-  background-color: rgb(230, 225, 225);
+  min-height: 110vh;
 }
-
-.home-container {
-  background-color: rgb(230, 225, 225);
+.about-container {
+  height: 110vh;
 }
 
 .about-container {
-  background-color: rgb(230, 225, 225);
   text-align: justify;
   font-size: 32px;
   font-style: oblique;
@@ -202,25 +149,46 @@ main {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
+
 @media screen and (max-width: 640px) {
   .textarea {
     font-size: 14px;
   }
 }
 
-.projects-container {
-  background-color: rgb(236, 233, 233);
+/* ------------------------ project container ----------------------- */
+
+.projectDivSpace {
+  display: flex;
+  flex-direction: column;
 }
-/* --------------------------------------------------------------- */
-/* Slideshow container */
+.projectsSpace {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.proInfoDiv {
+  flex: 2;
+}
+
+.proImageDiv {
+  flex: 1;
+}
+
+#images {
+  max-width: 450px;
+}
+
 .slideshow-container {
   width: 100%;
   max-height: 75vh;
   position: relative;
   margin: auto;
 }
+
 #imgSlider {
   margin-left: 15%;
   margin-right: 15%;
@@ -236,6 +204,8 @@ main {
     margin: 0%;
     height: 50vh;
   }
+}
+.projectsInformationDiv {
 }
 
 /* Caption text */
@@ -329,7 +299,6 @@ main {
 }
 /* -------------------Hire Me Section-------------------------------- */
 .hire-container {
-  background-color: rgb(230, 225, 225);
 }
 .hire-icons {
   width: 60%;
@@ -389,11 +358,6 @@ main {
     text-align: center;
   }
 }
-
-#contact-container {
-  background-color: rgb(230, 225, 225);
-}
-
 .contact-container {
   display: table;
   min-height: 400px;
@@ -403,7 +367,7 @@ main {
   margin-right: 10%;
   margin-top: 20px;
   margin-right: 20%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding-right: 20px;
 }
 
@@ -416,13 +380,12 @@ main {
     margin-left: 10%;
     margin-top: 20px;
     margin-right: 10%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding-right: 20px;
   }
 }
 
 .others-container {
-  background-color: rgb(230, 225, 225);
 }
 .firebase-show {
   display: block;
@@ -502,4 +465,12 @@ footer {
 .about,
 .home {
   text-align: center;
+}
+
+.projects-container,
+.about-container,
+.hire-container,
+#contact-container,
+.others-container {
+  min-height: 95vh;
 }

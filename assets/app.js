@@ -16,8 +16,12 @@ $(document).ready(function () {
     document.getElementById("mySidenav").style.width = "0";
   });
 
-  $("#test").on("click", function openNav() {
+  $("#sandwichBar").on("click", function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+  });
+
+  $("#mySidenav").on("click", function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
   });
 
   const db = firebase.database();

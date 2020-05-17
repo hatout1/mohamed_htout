@@ -6,7 +6,7 @@ main {
   min-height: 89vh;
 }
 
-.sidenav {
+/* .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -19,51 +19,6 @@ main {
   padding-top: 60px;
 }
 
-/* .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-} */
-
-/* #test {
-  position: fixed;
-  background-color: black;
-  color: white;
-  padding-left: 2%;
-  padding-right: 2%;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-} */
-
-/* .sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.closebtn {
-  position: fixed;
-  z-index: 200;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-} */
-
 .projects-container,
 .about-container,
 .hire-container,
@@ -72,9 +27,6 @@ main {
   min-height: 95vh;
 }
 
-/* .projects {
-  text-align: center;
-} */
 
 .projectDivSpace {
   display: flex;
@@ -85,8 +37,6 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* margin-top: 5%;
-  margin-left: 5%; */
 }
 
 .proImageDiv {
@@ -99,13 +49,5 @@ main {
 
 #images {
   max-width: 450px;
-}
+} */
 
-@media screen and (max-width: 640px) {
-  /* .projectsSpace {
-    flex: 1;
-    display: flex;
-    margin-top: 5%;
-    margin-left: 5%;
-  } */
-}
