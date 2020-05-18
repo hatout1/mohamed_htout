@@ -138,4 +138,9 @@ $(document).ready(function () {
   $(".carousel").carousel({
     interval: 1000,
   });
+
+  function Hello() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
 });
