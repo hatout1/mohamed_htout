@@ -114,7 +114,6 @@ $(document).ready(function () {
   // ----------------- Projects Slide Show-----------------------------------------
 
   var slideIndex = 0;
-  showSlides();
 
   function showSlides() {
     var i;
@@ -135,6 +134,8 @@ $(document).ready(function () {
     setTimeout(showSlides, 3000); // Change image every 2 seconds
   }
 
+  showSlides();
+
   $(".carousel").carousel({
     interval: 1000,
   });
@@ -143,4 +144,29 @@ $(document).ready(function () {
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
+});
+$("#contactEmailSend").on("click", function sendEmail(e) {
+  // function sendEmail(){
+  e.preventDefault();
+  // console.log("Hello");
+  const Name = $("#comment").val();
+  const Subject = $("#email").val();
+  const Body = $("#contact-message").val();
+
+  console.log(Name + " " + Subject + " sent you this: " + Body);
+
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "hatout1@gmail.com",
+    Password: "FEAA3CB52C3AFCC4C7C928B611882956EEC8",
+    To: "hatout1@gmail.com",
+    From: "keepnotes10@gmail.com",
+    Subject: Subject,
+    Body: Body,
+  }).then((message) => {
+    alert("Thank you for contacting me, I will reply as soon as possible");
+    $("#comment").val("");
+    $("#email").val("");
+    $("#contact-message").val("");
+  });
 });
