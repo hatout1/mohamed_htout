@@ -150,7 +150,8 @@ $("#contactEmailSend").on("click", function sendEmail(e) {
   e.preventDefault();
   // console.log("Hello");
   const Name = $("#comment").val();
-  const Subject = $("#email").val();
+  const subject = $("#email").val();
+  const Subject = Name + " (" + subject + ")";
   const Body = $("#contact-message").val();
 
   console.log(Name + " " + Subject + " sent you this: " + Body);
