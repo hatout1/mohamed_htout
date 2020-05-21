@@ -27,13 +27,14 @@
             <a class="nav-item nav-link" href="#" id="contact">Contact Me</a>
             <!-- space that allows people to reach out by sending emails-->
             <a class="nav-item nav-link" href="#" id="others">Others' Review</a>
-            <button class="nav-item nav-link" href="#" id="darkmode" onclick="Hello()">dark Mode</button>
+            <!-- <button class="nav-item nav-link" href="#" id="darkmode" onclick="Hello()">dark Mode</button> -->
     </div>
     <span style="font-size: 30px; cursor: pointer; " id="sandwichBar" onclick="openNav()"> &#9776;</span>
     
     <main>
-        <div class="home-container">
-            <h2 class="home">Home</h2>
+      <!-- ************************ Home ********************* -->
+        <div class="section-countainer" id="home-container">
+            <h2 class="sectionTitle" id="homeTitle">Home</h2>
             <div class="name col-xs-12 col-md-12 col-lg-6">
                 <h1 id="name">I'M <br>Mohamed Htout</h1>
             </div>
@@ -42,17 +43,18 @@
             </div>
         </div>
         
-        <div class="about-container">
-            <h2 class="about">About Me</h2>
+        <!-- ********************** About********************** -->
+        <div class="section-countainer" id="about-container">
+            <h2 class="sectionTitle" id="aboutTitle">About Me</h2>
             <div class="textarea">
-                   <p>Full Stack Web Developer with a background in the financial sector and administrative work, as well as in the security service sector. Proficient in HTML, CSS, Bootstrap, JavaScript, jQuery, MySQL, MongoDB, and specialized in the React front-end and Node back-end environment. I also have experience in building complete web Apps with back-end API systems. 
-                </p> <br>  
+                   <h3>Full Stack Web Developer with a background in the financial sector and administrative work, as well as in the security service sector. Proficient in HTML, CSS, Bootstrap, JavaScript, jQuery, MySQL, MongoDB, and specialized in the React front-end and Node back-end environment. I also have experience in building complete web Apps with back-end API systems. 
+                </h3> <br>  
             </div>
         </div>
 
-        <!-- ************************************************** -->
-        <div class="projects-container">
-          <h2 class="projects">My Projects</h2>
+        <!-- ********************** Projects ******************* -->
+        <div class="section-countainer" id="projects-container">
+          <h2 class="sectionTitle" id="projectsTitle">My Projects</h2>
           <!-- --------------- project 1---------------------------- -->
           <div class="projectDivSpace">
             <div class="proInfoDiv">
@@ -261,10 +263,9 @@
             </div>  
           </div>
         </div>
-        <!-- ************************* Hire me ************************* -->
-
-        <div class="hire-container">
-            <h2 class="hire">Hire Me</h2>
+        <!-- ********************** Hire me *********************** -->
+        <div class="section-countainer" id="hire-container">
+            <h2 class="sectionTitle" id="hireTitle">Hire Me</h2>
             <div class="hire-icons">
               <div class="pdf">
                   <img src="./images/pdf.png" id="pdf">
@@ -286,11 +287,11 @@
               </div>
             </div>
         </div>
-        <!-- *************************** conatct ********************** -->
-        <div id="contact-container">
-            <div id="contact-title">
-                <h2 class="contact">Contact Me</h2>
-            </div>
+        <!-- ********************** conatct *********************** -->
+        <div class="section-countainer" id="contact-container">
+            <!-- <div id="contact-title"> -->
+                <h2 class="sectionTitle" id="contactTitle">Contact Me</h2>
+            <!-- </div> -->
             <div class="contact-container bg-light p-5 mt-5">
                 <div class="row">
                     <div class="col-xs-12 col-md-12 col-lg-12 float-right">
@@ -320,9 +321,9 @@
             </div>
         </div>
 
-        <!-- ******************** Others Comments -->
-        <div class="others-container">
-            <h2 class="others">What Others Saying About Me</h2>
+        <!-- ******************** Others Comments ***************** -->
+        <div class="section-countainer" id="others-container">
+            <h2 class="sectionTitle" id="othersTitle">What Others Saying About Me</h2>
             <br>
             <othersDisplay></othersDisplay>
             <div class="others-form bg-light p-5 mt-5">

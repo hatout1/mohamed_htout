@@ -4,7 +4,8 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: rgb(236, 233, 233);
+  /* background-color: rgb(236, 233, 233); */
+  background-color: white;
 }
 
 .sidenav {
@@ -74,8 +75,8 @@ main {
 
 #name {
   font-size: 64px;
-  margin-top: 30%;
-  margin-left: 20%;
+  padding-top: 30%;
+  padding-left: 20%;
 }
 
 .name {
@@ -96,6 +97,9 @@ main {
   #name {
     font-size: 32px;
     text-align: center;
+    padding-top: 30%;
+    padding-left: 0%;
+    padding-bottom: 15%;
   }
 }
 
@@ -128,18 +132,11 @@ main {
   }
 }
 
-.home-container,
-.projects-container,
-.hire-container,
-#contact-container,
-.others-container {
+.section-countainer {
   min-height: 110vh;
 }
-.about-container {
-  height: 110vh;
-}
 
-.about-container {
+#about-container {
   text-align: justify;
   font-size: 32px;
   font-style: oblique;
@@ -206,12 +203,26 @@ main {
   }
 }
 
+.sectionTitle {
+  border-radius: 2%;
+  box-shadow: 2px 2px 4px 4px rgb(156, 154, 154);
+  min-width: 10%;
+}
+
 .projectTitle h3 {
   text-align: center;
 }
 
+.projectTitle {
+  /* background-color: gray; */
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
 #projectTitle {
-  background-color: rgb(223, 223, 37);
+  border-radius: 2%;
+  /* background-color: rgb(223, 223, 37); */
+  box-shadow: 2px 2px 4px 4px rgb(105, 105, 105);
   min-width: 10%;
 }
 
@@ -323,7 +334,9 @@ main {
   }
 }
 /* -------------------Hire Me Section-------------------------------- */
-/* -------------------Hire Me Section-------------------------------- */
+.hire-container {
+  margin-bottom: 2%;
+}
 .hire-icons {
   display: flex;
   flex-wrap: wrap;
@@ -338,6 +351,7 @@ main {
 .doc {
   flex: 1;
   margin-top: 10%;
+  /* margin-bottom: 5%; */
 }
 
 .googleDoc {
@@ -353,8 +367,6 @@ main {
 }
 
 .resumeBtn {
-  /* width: 250px;
-  font-size: 24px; */
   width: 50%;
   font-size: 24px;
   margin-top: 5%;
@@ -362,31 +374,10 @@ main {
   box-shadow: 5px 5px #717171;
 }
 @media screen and (max-width: 640px) {
-  /* .pdf,
+  /* .pdf,*/
   .doc {
-    width: 80%;
-    height: 100px;
-    float: left;
-    text-align: center;
-    margin-top: 2vh;
+    margin-bottom: 15%;
   }
-  #pdf,
-  #doc {
-    width: 100%;
-    max-height: 150px;
-    float: left;
-    display: block;
-    text-align: center;
-    margin-top: 2vh;
-  }
-
-  .pdf-btn,
-  .doc-btn {
-    width: 50%;
-    font-size: 12px;
-    float: left;
-    text-align: center;
-  } */
 }
 
 /* ---------------------------------- contact ----------------------- */
@@ -399,7 +390,6 @@ main {
   margin-right: 10%;
   margin-top: 20px;
   margin-right: 20%;
-  /* background-color: #ffffff; */
   padding-right: 20px;
 }
 
@@ -412,8 +402,6 @@ main {
     margin-left: 2.5%;
     margin-top: 20px;
     margin-right: 2.5%;
-    /* background-color: #ffffff; */
-    /* padding-right: 20px; */
   }
 }
 
@@ -424,7 +412,7 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   float: left;
-  border-block-end: yellow;
+  border-block-end: rgb(110, 110, 110);
   border-style: double;
 }
 
@@ -436,7 +424,7 @@ main {
     margin-left: 2.5%;
     margin-right: 2.5%;
     float: left;
-    border-block-end: yellow;
+    border-block-end: rgb(0, 0, 0);
     border-style: double;
   }
 }
@@ -492,30 +480,12 @@ footer {
     display: table;
     min-height: 400px;
     width: 100%;
-    /* margin-right: 2.5%; */
     border: 1px;
-    /* margin-left: 10%; */
-    /* margin-top: 20px; */
-    /* margin-right: 10%; */
     background-color: #ffffff;
-    /* padding-right: 20px; */
     margin: 0px;
   }
 }
 
-.others,
-.contact,
-.hire,
-.projects,
-.about,
-.home {
+.sectionTitle {
   text-align: center;
 }
-
-/* .projects-container,
-.about-container,
-.hire-container,
-#contact-container,
-.others-container {
-  
-} */

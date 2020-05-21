@@ -34,7 +34,7 @@ $(document).ready(function () {
       case (nav = "home"):
         $("html, body").animate(
           {
-            scrollTop: $(".home").offset().top,
+            scrollTop: $("#homeTitle").offset().top,
           },
           1000
         );
@@ -42,7 +42,7 @@ $(document).ready(function () {
       case (nav = "about"):
         $("html, body").animate(
           {
-            scrollTop: $(".about").offset().top,
+            scrollTop: $("#aboutTitle").offset().top,
           },
           1000
         );
@@ -50,7 +50,7 @@ $(document).ready(function () {
       case (nav = "projects"):
         $("html, body").animate(
           {
-            scrollTop: $(".projects").offset().top,
+            scrollTop: $("#projectsTitle").offset().top,
           },
           1000
         );
@@ -58,7 +58,7 @@ $(document).ready(function () {
       case (nav = "hire"):
         $("html, body").animate(
           {
-            scrollTop: $(".hire").offset().top,
+            scrollTop: $("#hireTitle").offset().top,
           },
           1000
         );
@@ -66,7 +66,7 @@ $(document).ready(function () {
       case (nav = "contact"):
         $("html, body").animate(
           {
-            scrollTop: $(".contact").offset().top,
+            scrollTop: $("#contactTitle").offset().top,
           },
           1000
         );
@@ -74,7 +74,7 @@ $(document).ready(function () {
       case (nav = "others"):
         $("html, body").animate(
           {
-            scrollTop: $(".others-container").offset().top,
+            scrollTop: $("#othersTitle").offset().top,
           },
           1000
         );
@@ -106,7 +106,7 @@ $(document).ready(function () {
     $("#name-others-form").empty();
     $("#messgae-others-form").empty();
 
-    $(".others-container > othersDisplay").append(
+    $("#others-container > othersDisplay").append(
       `<div class="firebase-show"><h1>${otherMessageDisp}</h1><h2>"${otherNameDisp}"</h2></div>`
     );
   });
